@@ -1,6 +1,14 @@
 import com.opencsv.bean.CsvBindByName;
 
 public class CSVUser {
+
+    public CSVUser(String name, String email, String phoneNo, String country) {
+        this.name = name;
+        this.email = email;
+        this.phoneNo = phoneNo;
+        this.country = country;
+    }
+
     @CsvBindByName
     private String name;
 
